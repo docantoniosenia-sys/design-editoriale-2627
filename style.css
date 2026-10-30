@@ -3020,3 +3020,12 @@ html { color-scheme: light; }
 /* v26-4 */
 #w4#w4#w4 .lp7 .ex .sx-do .tip2.tip2-1 { grid-template-columns: 1fr; }
 #w4#w4#w4 .lp7 .ex .sx-do .tip2.tip2-1 > div:first-child { padding-right: 0; }
+
+/* 29.10: bollini di progetto più grandi (come AD): etichetta piccola fuori, nome dentro */
+.gantt .g-phw { position: relative; min-width: 0; display: flex; align-self: center; }
+.gantt .g-phw > .g-ph { flex: 1; min-width: 0; }
+.gantt .g-phw > small { position: absolute; left: 0; right: 0; top: calc(100% + 3px); font-size: 9px; font-weight: 600; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); text-align: center; white-space: nowrap; }
+.gantt .g-ph { font-size: 13px; padding: 7px 4px; line-height: 1.15; text-align: center; }
+/* pallino prima del titolo delle revisioni */
+.lt-dot { display: inline-block; width: .42em; height: .42em; border-radius: 50%; background: currentColor; margin-right: .28em; vertical-align: .12em; }
+.gantt:has(.g-phw) { row-gap: 14px; }
